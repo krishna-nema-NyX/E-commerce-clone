@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NyX - E-commerce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="NyX Logo">
+      <h1>NyX</h1>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#categories">Categories</a>
+      <a href="#deals">Deals</a>
+      <a href="#contact">Contact</a>
+      <a href="#cart" class="cart">🛒 Cart</a>
+      <button id="search-btn" class="search-btn">🔍</button>
+    </nav>
+  </header>
+
+  <!-- SEARCH BAR (hidden by default) -->
+  <div id="search-bar" class="search-bar">
+    <input type="text" placeholder="Search for products...">
+  </div>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h2>Discover the Future of Shopping</h2>
+      <p>Exclusive collections, futuristic designs, and the best deals only at NyX.</p>
+      <a href="#shop" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section id="categories" class="categories">
+    <h2>Shop by Category</h2>
+    <div class="category-grid">
+      <div class="category-card"> Sneakers 👟</div>
+      <div class="category-card"> Watches ⌚</div>
+      <div class="category-card"> Electronics 🎧</div>
+      <div class="category-card"> Clothing 👕</div>
+      <div class="category-card"> Accessories👜</div>
+      <div class="category-card"> Beauty 💄</div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section id="shop" class="shop">
+    <h2>Featured Products</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="smart watch.jpg" alt="Smart Watch">
+        <h3>Smart Watches</h3>
+        <p>Starting from ₹1999</p>
+        <button>Visit</button>
+      </div>
+      <div class="product-card">
+        <img src="headphones.webp" alt="Wireless Headphones">
+        <h3>Wireless Headphones</h3>
+        <p>Starting from ₹2999</p>
+        <button>Visit</button>
+      </div>
+      <div class="product-card">
+        <img src="sneakers.webp" alt="Designer Sneakers">
+        <h3>Designer Sneakers</h3>
+        <p>Starting from ₹699</p>
+        <button>Visit</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEALS -->
+  <section id="deals" class="deals">
+    <h2>Hot Deals 🔥</h2>
+    <div class="deal-box">
+      <h3>50% OFF on First Order</h3>
+      <p>Use Code <b>NYX50</b> at checkout</p>
+      <a href="#shop" class="btn">Grab Deal</a>
+      <h3>500₹ Off on purchase of 2000₹ or more</h3>
+      <p>Use Code <b>OMG500</b> at checkout</p>
+      <a href="#shop" class="btn">Grab Deal</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 NyX E-commerce | Designed with ❤️ for Future Shoppers</p>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    const searchBtn = document.getElementById("search-btn");
+    const searchBar = document.getElementById("search-bar");
+
+    searchBtn.addEventListener("click", () => {
+      searchBar.classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html>
